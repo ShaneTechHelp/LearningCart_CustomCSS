@@ -69,7 +69,6 @@
             }
 
 
-
 .CKEditor .tab-content > .tab-pane, .CKEditor > .tab-content > .tab-pane, .CKEditor * .tab-content > .tab-pane {
     display: block !Important;
     border-top: 1px dashed #C9C9C9 !Important;
@@ -78,6 +77,19 @@
 
 .gridviewwrapper.PaymentBillingInfoWrapper table {
     display: none;
+}
+
+.gridviewwrapper {
+    width: 90vw !important;
+    max-width: 90vw !important;
+    margin-left: calc(-45vw + 50%) !important;
+    overflow-x: auto;
+    box-sizing: border-box !important;
+}
+
+.gridviewwrapper table {
+    width: 100% !important;
+    min-width: 600px;
 }
 
 #blogcomments {
@@ -109,6 +121,33 @@
     margin-right: 0px;
 }
 
+/* ── Tutorials page — responsive iframes ── */
+#ctl00_Content_lblText iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9 !important;
+    display: block !important;
+    border-radius: 8px;
+    margin: 12px 0 24px !important;
+}
+
+#ctl00_Content_lblText h2 {
+    font-size: clamp(1.1rem, 3vw, 1.6rem) !important;
+    line-height: 1.4 !important;
+    margin-bottom: 16px !important;
+}
+
+#ctl00_Content_lblText h4 {
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem) !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+}
+
+#ctl00_Content_lblText hr {
+    margin: 20px 0 !important;
+}
+
 span.frmrfv[style*="inline"], span.frmrfv[style*="visible"] {
     padding-left: 5px;
 }
@@ -129,6 +168,157 @@ input[type=text], input[type=password], textarea, select, .lc-textBox {
 
 .UserProfile {
     padding: 10px;
+}
+
+/* ── Edit Account / Profile form ── */
+.UserProfile .lc-form-1 {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0 0 40px;
+}
+
+.UserProfile .BillingInfoHeader {
+    margin-top: 32px !important;
+    margin-bottom: 20px !important;
+    padding: 10px 16px !important;
+    background: linear-gradient(135deg, #121E3D 0%, #1A3E7F 100%) !important;
+    border-radius: 8px !important;
+    color: #fff !important;
+}
+
+.UserProfile .BillingInfoHeader strong {
+    color: #fff !important;
+    font-size: 1em !important;
+    letter-spacing: 0.3px;
+}
+
+.UserProfile .lc-form-1 .frmlabel {
+    display: block !important;
+    width: auto !important;
+    clear: none !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    color: #3a4a6b !important;
+    margin-bottom: 5px !important;
+    margin-top: 16px !important;
+}
+
+.UserProfile .lc-form-1 .frmtxt,
+.UserProfile .lc-form-1 .frmddl,
+.UserProfile .lc-form-1 select {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 9px 12px !important;
+    border: 1px solid #d0d9ec !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    color: #333 !important;
+    background: #fff !important;
+    box-shadow: none !important;
+    transition: border-color 0.2s !important;
+}
+
+.UserProfile .lc-form-1 .frmtxt:focus,
+.UserProfile .lc-form-1 .frmddl:focus,
+.UserProfile .lc-form-1 select:focus {
+    border-color: #1A3E7F !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(26, 62, 127, 0.1) !important;
+}
+
+.UserProfile .lc-form-1 .lc-form-div-type3,
+.UserProfile .lc-form-1 .lc-form-div-type4 {
+    width: 100% !important;
+    margin-top: 6px !important;
+}
+
+.UserProfile .lc-form-1 br {
+    display: none !important;
+}
+
+.UserProfile .lc-form-1 .frmrequired {
+    color: #e05252 !important;
+    margin-left: 2px;
+}
+
+.UserProfile .lc-form-1 .frmrfv[style*="inline"],
+.UserProfile .lc-form-1 .frmrfv[style*="visible"] {
+    display: block !important;
+    font-size: 12px !important;
+    color: #e05252 !important;
+    margin-top: 4px;
+}
+
+.UserProfile .lc-form-1 .frmradio {
+    border: none !important;
+    background: transparent !important;
+    margin: 8px 0 0 !important;
+    width: auto !important;
+}
+
+.UserProfile .lc-form-1 .frmradio tbody {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 28px !important;
+    align-items: center !important;
+}
+
+.UserProfile .lc-form-1 .frmradio tr {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.UserProfile .lc-form-1 .frmradio td {
+    border: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.UserProfile .lc-form-1 .frmradio td input[type=radio] {
+    width: 18px !important;
+    height: 18px !important;
+    accent-color: #1A3E7F !important;
+    cursor: pointer !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+}
+
+.UserProfile .lc-form-1 .frmradio td label {
+    display: inline !important;
+    width: auto !important;
+    margin: 0 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #333 !important;
+    cursor: pointer !important;
+    clear: none !important;
+}
+
+/* Submit button — rendered outside .UserProfile by CMS; target by ID directly */
+#ctl00_Content_btnSubmit {
+    display: block !important;
+    float: none !important;
+    width: auto !important;
+    margin: 28px auto 0 !important;
+    padding: 11px 36px !important;
+    background: #1A3E7F !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: background 0.2s !important;
+}
+
+#ctl00_Content_btnSubmit:hover {
+    background: #122d5c !important;
 }
 
 .CourseCompletion {
@@ -276,8 +466,6 @@ table#ctl00_Content_dlCalendar tr:first-child td, table#ctl00_Content_dlCalendar
 #subcatheading {
     display: block;
     width: 100%;
-    margin: 0px auto;
-    text-align: center;
 }
 
 .ProductSubCatsItem {
@@ -388,24 +576,39 @@ h3.course-contracted::before {
     padding: 30px 0 50px;
 }
 
-.AccountGroupLogo {
+.lc-Container .AccountGroupLogo {
     display: none;
 }
 
-.AccountMainDiv {
-    text-align: center;
-    margin: 0 auto;
+.lc-Container .AccountMainDiv {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
     padding: 10px 0 30px;
-    white-space: nowrap;
+    margin: 0 auto;
+    white-space: normal;
 }
 
-.AccountFiles, .AccountFreeModules, .AccountRegCodes, .AccountCompletionReport, .AccountOrders, .AccountEditAccount, .AccountHighScore, .AccountBadges, .AccountButton {
-    display: inline-block !important;
+.lc-Container .AccountFiles,
+.lc-Container .AccountFreeModules,
+.lc-Container .AccountRegCodes,
+.lc-Container .AccountCompletionReport,
+.lc-Container .AccountOrders,
+.lc-Container .AccountEditAccount,
+.lc-Container .AccountHighScore,
+.lc-Container .AccountBadges,
+.lc-Container .AccountButton {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
     width: 200px !important;
     height: 185px !important;
     font-size: 1.1em;
     font-weight: 600;
-    margin: 10px;
+    margin: 0;
     padding: 20px;
     text-align: center;
     border-radius: 8px;
@@ -415,16 +618,22 @@ h3.course-contracted::before {
     transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-.AccountFiles:hover, .AccountFreeModules:hover, .AccountRegCodes:hover,
-.AccountCompletionReport:hover, .AccountOrders:hover, .AccountEditAccount:hover,
-.AccountHighScore:hover, .AccountBadges:hover, .AccountButton:hover {
+.lc-Container .AccountFiles:hover,
+.lc-Container .AccountFreeModules:hover,
+.lc-Container .AccountRegCodes:hover,
+.lc-Container .AccountCompletionReport:hover,
+.lc-Container .AccountOrders:hover,
+.lc-Container .AccountEditAccount:hover,
+.lc-Container .AccountHighScore:hover,
+.lc-Container .AccountBadges:hover,
+.lc-Container .AccountButton:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
     text-decoration: none;
     color: #fff;
 }
 
-.MyAccountIcon {
+.lc-Container .MyAccountIcon {
     display: block;
     width: clamp(50px, 6vw, 90px);
     height: clamp(50px, 6vw, 90px);
@@ -432,11 +641,11 @@ h3.course-contracted::before {
     color: #fff;
 }
 
-.AccountSeperator {
+.lc-Container .AccountSeperator {
     display: none;
 }
 
-.MyAccountText {
+.lc-Container .MyAccountText {
     text-align: center;
     max-width: 680px;
     margin: 0 auto 28px auto;
@@ -717,14 +926,22 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
     }
 
 
-    .AccountFiles, .AccountFreeModules, .AccountRegCodes, .AccountCompletionReport, .AccountOrders, .AccountEditAccount, .AccountHighScore, .AccountBadges, .AccountButton {
+    .lc-Container .AccountFiles,
+    .lc-Container .AccountFreeModules,
+    .lc-Container .AccountRegCodes,
+    .lc-Container .AccountCompletionReport,
+    .lc-Container .AccountOrders,
+    .lc-Container .AccountEditAccount,
+    .lc-Container .AccountHighScore,
+    .lc-Container .AccountBadges,
+    .lc-Container .AccountButton {
         width: 160px !important;
         height: 160px !important;
         font-size: 0.95em;
         padding: 15px;
     }
 
-    .MyAccountIcon {
+    .lc-Container .MyAccountIcon {
         width: clamp(40px, 8vw, 60px);
         height: clamp(40px, 8vw, 60px);
     }
@@ -756,11 +973,19 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
 }
 
 @media only screen and (max-width: 480px) {
-    .AccountMainDiv {
+    .lc-Container .AccountMainDiv {
         white-space: normal;
     }
 
-    .AccountFiles, .AccountFreeModules, .AccountRegCodes, .AccountCompletionReport, .AccountOrders, .AccountEditAccount, .AccountHighScore, .AccountBadges, .AccountButton {
+    .lc-Container .AccountFiles,
+    .lc-Container .AccountFreeModules,
+    .lc-Container .AccountRegCodes,
+    .lc-Container .AccountCompletionReport,
+    .lc-Container .AccountOrders,
+    .lc-Container .AccountEditAccount,
+    .lc-Container .AccountHighScore,
+    .lc-Container .AccountBadges,
+    .lc-Container .AccountButton {
         display: block !important;
         width: calc(100% - 20px) !important;
         height: auto !important;
@@ -962,7 +1187,6 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
 .commentUserName {
     display: block;
     font-weight: bold;
-    font-variant: :;
     font-style: italic;
 }
 
@@ -1019,4 +1243,89 @@ h2 {
 #ctl00_Content_pnlPassword login {
 width:100%;
 max-width:100%:
+}
+
+/* Break shop card grid out of Bootstrap's container max-width */
+.main.shop > .container {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    box-sizing: border-box !important;
+}
+ul.products.product-thumb-info-list {
+    justify-content: center !important;
+}
+span.product-thumb-info {
+    height: auto !important;
+}
+
+/* Porto's theme.js sets body.padding-top = headerHeight + 22 for sticky menu.
+   Our header hides off-screen (top: -57px) when sticky rather than staying fixed,
+   so this padding only creates a blank gap — remove it. */
+body {
+    padding-top: 12vh !important;
+}
+
+/* ===== Mobile & Tablet Responsive ===== */
+
+/* Logo: inline "width:10vw" = ~38px on a 375px phone — way too small.
+   Override to a readable size while keeping it proportional. */
+@media (max-width: 991px) {
+    #headerLogo {
+        width: clamp(90px, 25vw, 130px) !important;
+    }
+}
+
+/* Header container: Porto locks height:100px even on mobile, creating dead space.
+   Switch to flex so logo + utility nav + hamburger sit on one tight row. */
+@media (max-width: 991px) {
+    #header > .container {
+        height: auto !important;
+        margin-bottom: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    /* Pull hamburger out of its absolute positioning so flex can place it */
+    .btn-responsive-nav {
+        position: static !important;
+        margin-left: auto !important;
+        top: auto !important;
+        right: auto !important;
+        flex-shrink: 0;
+    }
+}
+
+/* Mobile nav dropdown: reinforce dark bg so light nav text stays readable */
+@media (max-width: 991px) {
+    #header .nav-main-collapse,
+    #header .nav-main-collapse.in {
+        background: #121E3D !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+    }
+}
+
+/* Page-header: trim vertical padding on phones — saves screen real estate */
+@media (max-width: 767px) {
+    section.page-header {
+        padding: 12px 0 !important;
+        min-height: auto !important;
+    }
+}
+
+/* Utility nav (Cart / My Account): on phones they already stack via existing CSS,
+   just ensure they stay readable within the new flex header row */
+@media (max-width: 480px) {
+    #header nav ul.nav-top.phone {
+        flex-shrink: 0;
+    }
+    #header nav ul.nav-top.phone li a {
+        font-size: 11px !important;
+        padding: 3px 5px !important;
+    }
 }
