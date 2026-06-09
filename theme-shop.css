@@ -1204,7 +1204,7 @@ span.product-thumb-info .price del {
 
 /* ── Shop page: expand outer Bootstrap container to full viewport ── */
 ul.products.product-thumb-info-list {
-    justify-content: flex-start !important;
+    justify-content: center !important;
 }
 
 .main.shop #main_content {
