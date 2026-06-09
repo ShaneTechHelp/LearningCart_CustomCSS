@@ -981,11 +981,12 @@ span.product-thumb-info-image {
 span.product-thumb-info-image img.img-responsive {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover !important;
+    object-fit: contain !important;
     object-position: center !important;
     display: block !important;
     border-radius: 0 !important;
     transition: transform 0.35s ease !important;
+    image-rendering: auto !important;
 }
 
 span.product-thumb-info:hover span.product-thumb-info-image img.img-responsive {
