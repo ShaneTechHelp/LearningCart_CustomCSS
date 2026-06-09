@@ -1201,3 +1201,79 @@ span.product-thumb-info .price del {
     border-color: #1A3E7F;
     color: #fff;
 }
+
+/* ── Shop page: expand outer Bootstrap container to full viewport ── */
+ul.products.product-thumb-info-list {
+    justify-content: flex-start !important;
+}
+
+.main.shop #main_content {
+    max-width: 98vw !important;
+    width: 98vw !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.main.shop > .container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* ── Card grid: 4-per-row desktop → 2 tablet → 1 phone ── */
+ul.products.product-thumb-info-list > li.product {
+    width: calc(25% - 18px) !important;
+}
+
+@media only screen and (max-width: 767px) {
+    ul.products.product-thumb-info-list > li.product {
+        width: calc(50% - 12px) !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    ul.products.product-thumb-info-list > li.product {
+        width: 100% !important;
+    }
+}
+
+/* ── Card layout: image on top, content below, never overlapping ── */
+ul.products.product-thumb-info-list > li.product .product-thumb-info {
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: visible !important;
+}
+
+ul.products.product-thumb-info-list > li.product .product-thumb-info-image {
+    flex: 0 0 240px !important;
+    height: 240px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    background: #f5f5f5 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+ul.products.product-thumb-info-list > li.product .product-thumb-info-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
+}
+
+ul.products.product-thumb-info-list > li.product .product-thumb-info-content {
+    position: static !important;
+    flex: 1 !important;
+    background: #fff !important;
+    padding: 14px 12px !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+ul.products.product-thumb-info-list > li.product .product-thumb-info-content h3,
+ul.products.product-thumb-info-list > li.product .product-thumb-info-content h2 {
+    font-size: 0.95em !important;
+    line-height: 1.4 !important;
+    margin-bottom: 6px !important;
+}
