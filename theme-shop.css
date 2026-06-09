@@ -1124,15 +1124,15 @@ span.product-thumb-info .price del {
     display: none !important;
 }
 
-/* ── Cart empty state ── */
-.lc-Container {
+/* ── Cart empty state (shop context only) ── */
+.main.shop .lc-Container {
     text-align: center !important;
     padding: 80px 24px 96px !important;
     max-width: 480px !important;
     margin: 0 auto !important;
 }
 
-.lc-Container::before {
+.main.shop .lc-Container::before {
     content: '';
     display: block;
     width: 88px;
@@ -1142,11 +1142,11 @@ span.product-thumb-info .price del {
     border-radius: 50%;
 }
 
-.lc-Container h1 {
+.main.shop .lc-Container h1 {
     display: none !important;
 }
 
-.lc-Container p {
+.main.shop .lc-Container p {
     font-size: 17px !important;
     color: #7A89A8 !important;
     margin: 0 !important;
