@@ -973,7 +973,7 @@ span.product-thumb-info-image {
     position: relative !important;
     display: block !important;
     width: 100% !important;
-    aspect-ratio: 4 / 3 !important;
+    aspect-ratio: 16 / 9 !important;
     overflow: hidden !important;
     background: #eef3ff !important;
 }
