@@ -4871,12 +4871,12 @@ ul.products.product-thumb-info-list {
     text-align: left !important;
 }
 
-/* Each grid cell — 4 across on desktop */
+/* Each grid cell — 3 across on desktop */
 ul.products.product-thumb-info-list > li.product {
     float: none !important;
     display: flex !important;
     flex-direction: column !important;
-    width: calc(25% - 18px) !important;
+    width: calc(33.333% - 16px) !important;
     padding: 0 !important;
     margin: 0 !important;
 }
