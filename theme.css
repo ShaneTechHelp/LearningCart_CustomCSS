@@ -4867,7 +4867,7 @@ ul.products.product-thumb-info-list {
     list-style: none !important;
     padding: 32px 0 !important;
     margin: 0 !important;
-    justify-content: flex-start !important;
+    justify-content: center !important;
     text-align: left !important;
 }
 
