@@ -16,6 +16,9 @@
 }
 
 
+
+
+
 .lc-WarningMessage {
     background-color: #feff0036;
     padding: 20px;
@@ -266,6 +269,10 @@ table#ctl00_Content_dlCalendar tr:first-child td, table#ctl00_Content_dlCalendar
     min-height: 456px;
 }
 
+.page-header .breadcrumb {
+    display: none;
+}
+
 #subcatheading {
     display: block;
     width: 100%;
@@ -377,26 +384,52 @@ h3.course-contracted::before {
 }
 
 /* ############# My Account Styles ############# */
+.lc-Container {
+    padding: 30px 0 50px;
+}
+
+.AccountGroupLogo {
+    display: none;
+}
+
 .AccountMainDiv {
     text-align: center;
-    margin: 0px auto;
+    margin: 0 auto;
+    padding: 10px 0 30px;
+    white-space: nowrap;
 }
 
 .AccountFiles, .AccountFreeModules, .AccountRegCodes, .AccountCompletionReport, .AccountOrders, .AccountEditAccount, .AccountHighScore, .AccountBadges, .AccountButton {
-    margin: 0px 8px;
-    display: inline-block;
-    font-size: 1.4em;
-    width: 24%;
-    margin: 1%;
-    padding: 15px;
+    display: inline-block !important;
+    width: 200px !important;
+    height: 185px !important;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    vertical-align: top;
+    white-space: normal;
+    box-sizing: border-box;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.AccountFiles:hover, .AccountFreeModules:hover, .AccountRegCodes:hover,
+.AccountCompletionReport:hover, .AccountOrders:hover, .AccountEditAccount:hover,
+.AccountHighScore:hover, .AccountBadges:hover, .AccountButton:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+    text-decoration: none;
+    color: #fff;
 }
 
 .MyAccountIcon {
     display: block;
-    font-size: 120px;
-    font-size: 6vw;
-    color: #FFF;
-    padding-bottom: 10px;
+    width: clamp(50px, 6vw, 90px);
+    height: clamp(50px, 6vw, 90px);
+    margin: 0 auto 14px auto;
+    color: #fff;
 }
 
 .AccountSeperator {
@@ -405,6 +438,11 @@ h3.course-contracted::before {
 
 .MyAccountText {
     text-align: center;
+    max-width: 680px;
+    margin: 0 auto 28px auto;
+    font-size: 1.05em;
+    color: #555;
+    line-height: 1.75;
 }
 
 /* ############# End My Account ############# */
@@ -489,6 +527,7 @@ table#ctl00_Content_dlCalendar tr td {
     padding: 0 !important;
     margin: 0 !important;
 }
+    /* calendar styles for the day  table */
     table#ctl00_Content_dlCalendar tr td table, table#ctl00_Content_dlCalendar tr td table tr td {
         border-style: none !important;
     }
@@ -512,6 +551,9 @@ table#calendar {
     background-color: White;
     padding: 0;
     height: auto;
+}
+
+#calendarcontainer table td a:link, #calendarcontainer table td a:hover {
 }
 
 #calendarcontainer table td {
@@ -561,6 +603,7 @@ table#calendar {
     font-size: 18px;
 }
 
+/* first 7 items are our headers */
 table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem_3, table tr td#CalendarItem_4, table tr td#CalendarItem_5, table tr td#CalendarItem_6, table tr td#CalendarItem_7 {
     height: auto;
     display: block;
@@ -599,10 +642,15 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
 }
 /* ############# End Calendar ############# */
 
+
+
+
+
 /* Quiz Styles */
 .quizArea > h3 {
     font-size: 13px !Important;
 }
+
 
 .answers label {
     width: auto;
@@ -653,6 +701,16 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
 }
 
 
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 991px) {
     body #header .nav-main ul.dropdown-menu {
         display: block !important;
@@ -660,10 +718,15 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
 
 
     .AccountFiles, .AccountFreeModules, .AccountRegCodes, .AccountCompletionReport, .AccountOrders, .AccountEditAccount, .AccountHighScore, .AccountBadges, .AccountButton {
-        font-size: 12px;
-        padding: 10px;
-        display: block;
-        width: auto;
+        width: 160px !important;
+        height: 160px !important;
+        font-size: 0.95em;
+        padding: 15px;
+    }
+
+    .MyAccountIcon {
+        width: clamp(40px, 8vw, 60px);
+        height: clamp(40px, 8vw, 60px);
     }
 
 
@@ -692,11 +755,29 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
     }
 }
 
+@media only screen and (max-width: 480px) {
+    .AccountMainDiv {
+        white-space: normal;
+    }
+
+    .AccountFiles, .AccountFreeModules, .AccountRegCodes, .AccountCompletionReport, .AccountOrders, .AccountEditAccount, .AccountHighScore, .AccountBadges, .AccountButton {
+        display: block !important;
+        width: calc(100% - 20px) !important;
+        height: auto !important;
+        max-width: 320px;
+        margin: 8px auto;
+    }
+}
+
+/* for iphone size shrink our super header text size */
 @media only screen and (max-width: 570px) {
+
 
     .nophone {
         display: none;
     }
+
+
 
     #txtEmail, #ctl00_Content_txtPassword {
         width: 100px;
@@ -706,6 +787,7 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
     .ExistingUser h3 {
         margin-bottom: 0px;
     }
+
 
     body #header .nav-main ul.dropdown-menu {
         display: block !important;
@@ -750,6 +832,7 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
         width: 98%;
     }
 
+    /*body, td, div, span, input, select, th, button, strong {*/
     body, td, input, select, th, button {
         font-size: 11px !Important;
     }
@@ -760,10 +843,11 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
     }
 
         table td, table th {
-            word-wrap: break-word;
+            word-wrap: break-word; /* All browsers since IE 5.5+ */
             overflow-wrap: break-word;
             padding: 1px !Important;
         }
+
 
     .carttable td:nth-child(3), .carttable th:nth-child(3) {
         display: none;
@@ -799,6 +883,7 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
         width: 80% !important;
     }
 
+
     input.txtquantity {
         width: 100% !Important;
     }
@@ -806,6 +891,9 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
     input {
         margin-left: 0;
     }
+
+
+
 
     #ctl00_Content_pnlFrmDat label {
         padding-left: 0px;
@@ -822,6 +910,10 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
 }
 
 
+
+.AccountBadgesContainer {
+}
+
 .AccountBadgesBadge {
     display: inline-block;
     margin: 0px 20px;
@@ -833,14 +925,23 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
         margin-bottom: 0px;
     }
 
+.AccountBadgesBadgeImage {
+}
+
 .AccountBadgesExpiration {
     text-align: left;
     padding: 8px 0px;
 }
 
+
 #ctl00_Content_ucAccountBadges_shareButtons {
     text-align: right;
 }
+
+
+
+
+/* badge styles */
 
 .badgeimage {
     float: left;
@@ -851,16 +952,20 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
     float: left;
 }
 
+
 .AccountBadgesExpiration {
     font-weight: bold;
     font-style: italic;
 }
 
+
 .commentUserName {
     display: block;
     font-weight: bold;
+    font-variant: :;
     font-style: italic;
 }
+
 
 .txtScore {
     width: 60px !important;
@@ -869,6 +974,11 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
 .txtDate {
     width: 100px !important;
 }
+
+
+
+
+
 
 .fileUpload {
     position: relative;
@@ -887,20 +997,26 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
         filter: alpha(opacity=0);
     }
 
+
 .externaltrainingtable td input {
     padding: 2px;
     width: 100%;
 }
 
+
 h2 {
     margin-bottom: 0;
 }
+
 
 #shareButtons {
     float: right
 }
 
+
+
+
 #ctl00_Content_pnlPassword login {
-    width: 100%;
-    max-width: 100%;
+width:100%;
+max-width:100%:
 }
