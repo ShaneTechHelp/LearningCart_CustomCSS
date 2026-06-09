@@ -1202,27 +1202,26 @@ span.product-thumb-info .price del {
     color: #fff;
 }
 
-/* ── Shop page: expand outer Bootstrap container to full viewport ── */
-ul.products.product-thumb-info-list {
-    justify-content: center !important;
-}
-
-.main.shop #main_content {
-    max-width: 98vw !important;
-    width: 98vw !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-}
-
+/* ── Shop card grid ── */
 .main.shop > .container {
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
-/* ── Card grid: 4-per-row desktop → 2 tablet → 1 phone ── */
+ul.products.product-thumb-info-list {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 24px !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
 ul.products.product-thumb-info-list > li.product {
+    float: none !important;
     width: calc(25% - 18px) !important;
+    margin: 0 !important;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1241,6 +1240,7 @@ ul.products.product-thumb-info-list > li.product {
 ul.products.product-thumb-info-list > li.product .product-thumb-info {
     display: flex !important;
     flex-direction: column !important;
+    height: auto !important;
     overflow: visible !important;
 }
 
@@ -1253,6 +1253,7 @@ ul.products.product-thumb-info-list > li.product .product-thumb-info-image {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    position: relative !important;
 }
 
 ul.products.product-thumb-info-list > li.product .product-thumb-info-image img {
@@ -1271,8 +1272,9 @@ ul.products.product-thumb-info-list > li.product .product-thumb-info-content {
     transform: none !important;
 }
 
+ul.products.product-thumb-info-list > li.product .product-thumb-info-content h2,
 ul.products.product-thumb-info-list > li.product .product-thumb-info-content h3,
-ul.products.product-thumb-info-list > li.product .product-thumb-info-content h2 {
+ul.products.product-thumb-info-list > li.product .product-thumb-info-content h4 {
     font-size: 0.95em !important;
     line-height: 1.4 !important;
     margin-bottom: 6px !important;
