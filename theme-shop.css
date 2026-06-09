@@ -1220,7 +1220,7 @@ ul.products.product-thumb-info-list {
 
 ul.products.product-thumb-info-list > li.product {
     float: none !important;
-    width: calc(25% - 18px) !important;
+    width: calc(33.333% - 16px) !important;
     margin: 0 !important;
 }
 
