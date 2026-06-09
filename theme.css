@@ -4919,12 +4919,12 @@ span.product-thumb-info > span.product-thumb-info-content {
     order: 2 !important;
     flex: 1 !important;
 }
-/* Image container — 4:3 landscape ratio matching the course thumbnails */
+/* Image container — 16:9 ratio matching the 1385×780 course thumbnails */
 span.product-thumb-info-image {
     position: relative !important;
     display: block !important;
     width: 100% !important;
-    aspect-ratio: 4 / 3 !important;
+    aspect-ratio: 16 / 9 !important;
     overflow: hidden !important;
     background: #f0f4ff !important;
 }
