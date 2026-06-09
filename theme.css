@@ -53,18 +53,7 @@
     color: #6B637F;
     text-align: center;
 }
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
-li {
-    display: inline-block;
-}
+
 .ann-bar {
     background: linear-gradient(to bottom, #1A3E7F 0%, #1A3E7F 40%, #152F5F 95%, #000000 100%);
     border-bottom: 1px solid #2a3d78;
