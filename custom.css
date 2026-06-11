@@ -16,9 +16,6 @@
 }
 
 
-
-
-
 .lc-WarningMessage {
     background-color: #feff0036;
     padding: 20px;
@@ -852,9 +849,6 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
 /* ############# End Calendar ############# */
 
 
-
-
-
 /* Quiz Styles */
 .quizArea > h3 {
     font-size: 13px !Important;
@@ -908,16 +902,6 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
 #header nav ul.nav-top {
     float: left;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 991px) {
@@ -1200,10 +1184,6 @@ table tr td#CalendarItem_1, table tr td#CalendarItem_2, table tr td#CalendarItem
 }
 
 
-
-
-
-
 .fileUpload {
     position: relative;
     overflow: hidden;
@@ -1241,8 +1221,8 @@ h2 {
 
 
 #ctl00_Content_pnlPassword login {
-    width:100%;
-    max-width:100%;
+width:100%;
+max-width:100%;
 }
 
 /* Break shop card grid out of Bootstrap's container max-width */
@@ -1270,16 +1250,12 @@ body {
 
 /* ===== Mobile & Tablet Responsive ===== */
 
-/* Logo: inline "width:10vw" = ~38px on a 375px phone — way too small.
-   Override to a readable size while keeping it proportional. */
 @media (max-width: 991px) {
     #headerLogo {
         width: clamp(90px, 25vw, 130px) !important;
     }
 }
 
-/* Header container: Porto locks height:100px even on mobile, creating dead space.
-   Switch to flex so logo + utility nav + hamburger sit on one tight row. */
 @media (max-width: 991px) {
     #header > .container {
         height: auto !important;
@@ -1291,7 +1267,6 @@ body {
         padding-bottom: 10px !important;
     }
 
-    /* Pull hamburger out of its absolute positioning so flex can place it */
     .btn-responsive-nav {
         position: static !important;
         margin-left: auto !important;
@@ -1301,7 +1276,6 @@ body {
     }
 }
 
-/* Mobile nav dropdown: reinforce dark bg so light nav text stays readable */
 @media (max-width: 991px) {
     #header .nav-main-collapse,
     #header .nav-main-collapse.in {
@@ -1310,7 +1284,6 @@ body {
     }
 }
 
-/* Page-header: trim vertical padding on phones — saves screen real estate */
 @media (max-width: 767px) {
     section.page-header {
         padding: 12px 0 !important;
@@ -1318,8 +1291,6 @@ body {
     }
 }
 
-/* Utility nav (Cart / My Account): on phones they already stack via existing CSS,
-   just ensure they stay readable within the new flex header row */
 @media (max-width: 480px) {
     #header nav ul.nav-top.phone {
         flex-shrink: 0;
@@ -1369,7 +1340,7 @@ body {
     padding: 0 !important;
 }
 
-/* Payment form panel: takes all remaining space (flex-basis 0 avoids fighting lc_base %) */
+/* Payment form panel: flex-basis 0 avoids fighting lc_base % widths */
 #ctl00_Content_ucCartPayment_pnlCard > .lc-row > .lc-cartpaymentinfo {
     flex: 1 1 0 !important;
     min-width: 0 !important;
@@ -1396,7 +1367,6 @@ body {
     box-sizing: border-box !important;
 }
 
-/* Security intro paragraphs */
 .lc-cartpaymentinfo > p {
     color: #5a6a8a !important;
     font-size: 13.5px !important;
@@ -1404,7 +1374,6 @@ body {
     line-height: 1.6 !important;
 }
 
-/* "Complete Your Order" heading */
 .lc-paymentfields h3 {
     font-size: 17px !important;
     font-weight: 700 !important;
@@ -1414,14 +1383,12 @@ body {
     border-bottom: 2px solid #eef1f8 !important;
 }
 
-/* Payment fields container */
 .lc-paymentfields {
     padding: 0 !important;
     border-top: none !important;
     margin-top: 16px !important;
 }
 
-/* Floating-label inputs */
 input[type="text"].lc-inlineinput,
 select.lc-inlineinput {
     background: #f8faff !important;
@@ -1446,7 +1413,6 @@ select.lc-inlineinput:focus {
     background: #fff !important;
 }
 
-/* Floating label text */
 .lc-inlinelabel {
     font-size: 10px !important;
     font-weight: 700 !important;
@@ -1459,7 +1425,6 @@ select.lc-inlineinput:focus {
     z-index: 1;
 }
 
-/* Submit / purchase button */
 #btnPurchase {
     display: block !important;
     float: none !important;
@@ -1483,7 +1448,6 @@ select.lc-inlineinput:focus {
     transform: translateY(-1px) !important;
 }
 
-/* Cart / order summary sidebar */
 .lc-4.lc-cart {
     background: linear-gradient(160deg, #121E3D 0%, #1A3E7F 100%) !important;
     border-radius: 14px !important;
@@ -1597,7 +1561,6 @@ select.lc-inlineinput:focus {
     text-decoration: underline !important;
 }
 
-/* Discount code input (when toggled visible) */
 #ctl00_Content_ucCartPayment_txtDiscount {
     background: rgba(255,255,255,0.1) !important;
     border: 1px solid rgba(255,255,255,0.25) !important;
@@ -1644,10 +1607,8 @@ select.lc-inlineinput:focus {
     }
 }
 
-
 /* ── Login page redesign ── */
 
-/* Override the global table border/bg for .Login */
 table.Login {
     background: transparent !important;
     border: none !important;
@@ -1656,7 +1617,6 @@ table.Login {
     width: 100% !important;
 }
 
-/* Neutralize global gridviewwrapper breakout on login page */
 #ctl00_Content_pnlLogin .gridviewwrapper {
     width: 100% !important;
     max-width: 100% !important;
@@ -1664,13 +1624,11 @@ table.Login {
     overflow-x: visible !important;
 }
 
-/* Outer container — centered, reasonable max-width */
 #ctl00_Content_pnlLogin .lc-Container,
 .lc-Container:has(#ctl00_Content_pnlLogin) {
     padding: 40px 0 60px !important;
 }
 
-/* Make the two table cells behave like flex cards */
 table.Login tbody {
     display: flex !important;
     flex-wrap: nowrap !important;
@@ -1696,7 +1654,6 @@ table.Login td {
     vertical-align: top !important;
 }
 
-/* Left card — login form */
 table.Login td.ExistingUser {
     background: #fff !important;
     border: 1px solid #e2e8f4 !important;
@@ -1713,7 +1670,6 @@ table.Login td.ExistingUser h3 {
     margin-top: 0 !important;
 }
 
-/* Right card — new user */
 table.Login td.NewUser {
     background: linear-gradient(160deg, #121E3D 0%, #1A3E7F 100%) !important;
     border: none !important;
@@ -1723,7 +1679,14 @@ table.Login td.NewUser {
     justify-content: center !important;
 }
 
-/* Labels */
+table.Login td.NewUser h3 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    margin-bottom: 16px !important;
+    margin-top: 0 !important;
+}
+
 #ctl00_Content_pnlLogin label {
     display: block !important;
     width: auto !important;
@@ -1737,12 +1700,10 @@ table.Login td.NewUser {
     margin-top: 16px !important;
 }
 
-/* First label — no top margin */
 #ctl00_Content_pnlLogin label:first-of-type {
     margin-top: 0 !important;
 }
 
-/* Inputs */
 #txtEmail,
 #ctl00_Content_txtPassword {
     display: block !important;
@@ -1768,12 +1729,11 @@ table.Login td.NewUser {
     background: #fff !important;
 }
 
-/* Remove the br-tag spacing effect — hide them */
+/* hide the br-tag spacers inside the login form */
 table.Login td.ExistingUser br {
     display: none !important;
 }
 
-/* Login button */
 #ctl00_Content_btnLogin {
     display: block !important;
     float: none !important;
@@ -1797,7 +1757,6 @@ table.Login td.ExistingUser br {
     transform: translateY(-1px) !important;
 }
 
-/* Forgot password link */
 #ctl00_Content_lnkPassword {
     display: block !important;
     margin-top: 12px !important;
@@ -1812,7 +1771,6 @@ table.Login td.ExistingUser br {
     text-decoration: underline !important;
 }
 
-/* Right card — "Register" link */
 table.Login td.NewUser a[href*="UserInfo"] {
     display: inline-block !important;
     margin-top: 16px !important;
@@ -1831,12 +1789,6 @@ table.Login td.NewUser a[href*="UserInfo"]:hover {
     background: rgba(255,255,255,0.26) !important;
 }
 
-/* Right card heading — inject one via the first text node styling */
-table.Login td.NewUser {
-    padding-top: 40px !important;
-}
-
-/* Mobile: stack cards */
 @media (max-width: 700px) {
     table.Login tbody {
         flex-direction: column !important;
