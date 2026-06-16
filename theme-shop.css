@@ -53,9 +53,6 @@ Version: 		3.9.0
 	margin-right: 5px;
 }
 
-#header nav.mega-menu .mega-menu-shop .product-thumbnail {
-	width: 120px;
-}
 
 #header nav.mega-menu .mega-menu-shop .product-actions {
 	text-align: right;
@@ -612,10 +609,6 @@ Version: 		3.9.0
 	width: 1%;
 }
 
-.shop table.cart .product-thumbnail {
-	width: 7%;
-}
-
 .shop table.cart .product-name {
 	width: 60%;
 }
@@ -977,7 +970,6 @@ span.product-thumb-info-image {
     overflow: hidden !important;
     background: #eef3ff !important;
 }
-
 span.product-thumb-info-image img.img-responsive {
     width: 100% !important;
     height: 100% !important;
