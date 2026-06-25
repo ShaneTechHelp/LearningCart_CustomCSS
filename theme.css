@@ -4576,9 +4576,6 @@ background: none !important;
 }
 }
 
-</style>
-
-<style>
 /* ── Final overrides — loaded after all theme CSS ── */
 
 /* Reset nav-main-collapse globally, re-apply dark only on mobile */
@@ -5017,3 +5014,5 @@ span.product-thumb-info-content .price .amount {
     color: #1A3E7F !important;
     letter-spacing: -0.4px !important;
 }
+
+
