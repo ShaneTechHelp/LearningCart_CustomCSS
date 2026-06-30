@@ -4873,7 +4873,6 @@ ul.products.product-thumb-info-list > li.product {
     float: none !important;
     display: flex !important;
     flex-direction: column !important;
-    width: calc(33.333% - 16px) !important;
     padding: 0 !important;
     margin: 0 !important;
 }
