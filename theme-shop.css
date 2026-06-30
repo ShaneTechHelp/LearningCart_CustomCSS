@@ -1241,18 +1241,18 @@ ul.products.product-thumb-info-list > li.product .product-thumb-info-image {
     flex: 0 0 auto !important;
     height: auto !important;
     width: 100% !important;
-    aspect-ratio: auto !important;
+    aspect-ratio: 1 / 1 !important;   /* square box to match 512x512 images */
     overflow: hidden !important;
-    background: transparent !important;
+    background: #fff !important;
     display: block !important;
     position: relative !important;
 }
 
 ul.products.product-thumb-info-list > li.product .product-thumb-info-image img {
     width: 100% !important;
-    height: auto !important;
+    height: 100% !important;
     display: block !important;
-    object-fit: contain !important;
+    object-fit: contain !important;   /* shows the whole image; use 'cover' to fill & crop */
     object-position: center !important;
 }
 
