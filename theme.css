@@ -4920,15 +4920,6 @@ span.product-thumb-info-image {
     width: 100% !important;
     background: #f0f4ff !important;
 }
-span.product-thumb-info-image img.img-responsive {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.35s ease !important;
-}
-span.product-thumb-info:hover span.product-thumb-info-image img.img-responsive {
-    transform: scale(1.05) !important;
-}
-
 /* Hover overlay */
 span.product-thumb-info-act {
     position: absolute !important;
