@@ -4918,8 +4918,6 @@ span.product-thumb-info > span.product-thumb-info-content {
 }
 /* Image container — slightly shorter than 16:9 to keep cards compact */
 span.product-thumb-info-image {
-    position: relative !important;
-    display: block !important;
     width: 100% !important;
     background: #f0f4ff !important;
 }
