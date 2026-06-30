@@ -1241,7 +1241,7 @@ ul.products.product-thumb-info-list > li.product .product-thumb-info-image {
     flex: 0 0 auto !important;
     height: auto !important;
     width: 100% !important;
-    aspect-ratio: 1 / 1 !important;   /* square box to match 512x512 images */
+    aspect-ratio: 16 / 9 !important;   /* shorter landscape box (was 1/1 square — too tall) */
     overflow: hidden !important;
     background: #fff !important;
     display: block !important;
